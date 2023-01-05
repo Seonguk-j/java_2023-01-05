@@ -27,6 +27,19 @@ public class StringExample {
 		String str2 = "       \rabcd";
 		System.out.print(str1);
 		System.out.print(str2);
-	}
+		
+		byte byteValue = 10;
+		int intValue = byteValue;		//자동 타입 변환
+		
+		long longValue = 50000000000L;
+		float floatValue = longValue;	//5.0E9f
+		double doulbeValue = longValue;	//5.0E9
+		
+		char charValue = 'A';
+		intValue = charValue;		//65
+		
+		byteValue = 65;			//1byte byte형은 char형에 대입 불가 자동 형변환X
+		//charValue = byteValue;		//에러
+	} 
 
 }
